@@ -1,0 +1,125 @@
+baseURL = "https://more-than-code.github.io/ai-learning-collection/"
+title = "AI Learning Collection"
+locale = "en-nz"
+timeZone = "Pacific/Auckland"
+enableRobotsTXT = true
+
+[params]
+  description = "Joe's AI learning notes, lab code, configs, evalsets and redacted screenshots — Google Cloud Build with Gemini (ADK, Gemini Enterprise, governance workshop) and IBM generative/agentic AI readings. Readable by humans and AI (llms.txt, llms-full.txt, raw Markdown)."
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+    width = "wide"
+  [params.page]
+    width = "wide"
+  [params.theme]
+    default = "system"
+    displayToggle = true
+  [params.search]
+    enable = true
+    type = "flexsearch"
+    [params.search.flexsearch]
+      index = "content"
+      tokenize = "forward"
+  [params.footer]
+    displayCopyright = false
+    displayPoweredBy = true
+  [params.imageZoom]
+    enable = true
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = false
+  [markup.highlight]
+    noClasses = false
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "Catalogue"
+    pageRef = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 2
+  [[menu.main]]
+    name = "llms.txt"
+    url = "/ai-learning-collection/llms.txt"
+    weight = 3
+  [[menu.main]]
+    name = "Search"
+    weight = 4
+    [menu.main.params]
+      type = "search"
+  [[menu.main]]
+    name = "Theme"
+    weight = 5
+    [menu.main.params]
+      type = "theme-toggle"
+
+[outputFormats]
+  [outputFormats.llmsfull]
+    baseName = "llms-full"
+    mediaType = "text/plain"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.markdown]
+    ugly = false
+
+[outputs]
+  home = ["html", "rss", "llms", "llmsfull", "markdown"]
+  section = ["html", "markdown"]
+  page = ["html", "markdown"]
+  taxonomy = ["html"]
+  term = ["html"]
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.146.0"
+  [[module.imports]]
+    path = "github.com/imfing/hextra"
+
+  [[module.mounts]]
+    source = "site/layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "INDEX.md"
+    target = "content/_index.md"
+  [[module.mounts]]
+    source = "TREE.txt"
+    target = "static/TREE.txt"
+  [[module.mounts]]
+    source = "layout.png"
+    target = "static/layout.png"
+
+  [[module.mounts]]
+    source = "gemini-agent-development-cps-path-4741/NOTES.md"
+    target = "content/gemini-agent-development-cps-path-4741/_index.md"
+  [[module.mounts]]
+    source = "gemini-agent-development-cps-path-4741"
+    target = "static/gemini-agent-development-cps-path-4741"
+    files = ["! **.md"]
+
+  [[module.mounts]]
+    source = "gemini-enterprise-deployment-cps-path-4739/NOTES.md"
+    target = "content/gemini-enterprise-deployment-cps-path-4739/_index.md"
+  [[module.mounts]]
+    source = "gemini-enterprise-deployment-cps-path-4739"
+    target = "static/gemini-enterprise-deployment-cps-path-4739"
+    files = ["! **.md"]
+
+  [[module.mounts]]
+    source = "gemini-workshop-track2-platform-builder/NOTES.md"
+    target = "content/gemini-workshop-track2-platform-builder/_index.md"
+  [[module.mounts]]
+    source = "gemini-workshop-track2-platform-builder"
+    target = "static/gemini-workshop-track2-platform-builder"
+    files = ["! **.md"]
+
+  [[module.mounts]]
+    source = "ibm-yourlearning-genai-agentic-consultant-experienced/NOTES.md"
+    target = "content/ibm-yourlearning-genai-agentic-consultant-experienced/_index.md"

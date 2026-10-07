@@ -1,0 +1,1 @@
+{{- $src := "" -}}{{- with .File -}}{{- $src = strings.TrimPrefix (printf "%s/" hugo.WorkingDir) .Filename -}}{{- end -}}{{- return $src -}}

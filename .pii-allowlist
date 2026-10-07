@@ -1,0 +1,8 @@
+# Accepted false positives for scripts/pii_scan.py — one Python regex per line.
+#   <regex>        matched against the flagged value AND the full source line
+#   path:<regex>   matched against the file path; silences every finding in that file (use sparingly;
+#                  this is also the only way to accept a finding in an image)
+# Keep entries as narrow as possible and say why.
+
+# Fictional customer in the Google lab's ADK evaluation scenarios (Harry Potter character, not a real person).
+^ron\.weasley@hogwarts\.edu$

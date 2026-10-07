@@ -1,0 +1,41 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Secrets — never commit (lab .env files deliberately excluded)
+.env
+.env.*
+*.pem
+*.key
+*credentials*.json
+*token*
+*cookies*
+# Per-user pii-scan provider settings (the committed template is .pii-scan.env.example)
+.pii-scan.env
+
+# Python / Node artefacts
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+
+# Archives / large media
+*.tar.gz
+*.zip
+*.apk
+*.mp4
+*.mov
+*.webm
+
+# Scratch
+tmp/
+scratch/
+
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock

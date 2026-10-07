@@ -1,0 +1,80 @@
+ai-learning-collection/  (AI-only knowledge base; copies only; built 2026-10-08 NZDT; Hugo + Hextra site)
+├── .gitignore  [1K]
+├── .pii-allowlist  [1K]
+├── .pii-scan.env.example  [2K]
+├── INDEX.md  [4K]
+├── README.md  [5K]
+├── TREE.txt  [4K]
+├── go.mod  [1K]
+├── go.sum  [1K]
+├── hugo.toml  [3K]
+├── layout.png  [249K]
+├── .githooks/
+│   └── pre-commit  [1K]
+├── .github/
+│   └── workflows/
+│       └── hugo-pages.yml  [2K]
+├── gemini-agent-development-cps-path-4741/
+│   ├── NOTES.md  [3K]
+│   ├── lab2-deploy-adk-genai129/
+│   │   └── screenshots/
+│   │       └── 01-lab2-adk-forever-paint-conversation.png  [168K]
+│   └── lab3-evaluate-adk-genai155/
+│       ├── improved/
+│       │   ├── agent_new.py  [9K]
+│       │   └── eval_config.json  [1K]
+│       └── starter-bigquery_agent/
+│           ├── __init__.py  [1K]
+│           ├── agent.py  [9K]
+│           ├── callback_logging.py  [1K]
+│           ├── requirements.txt  [1K]
+│           ├── set_with_conversation_scenarios.evalset.json  [1K]
+│           └── evaluations/
+│               ├── eval_config.json  [1K]
+│               ├── scenarios.json  [1K]
+│               └── session_input.json  [1K]
+├── gemini-enterprise-deployment-cps-path-4739/
+│   ├── NOTES.md  [6K]
+│   ├── lab1-workspace-datasources-model-armor-pp016/
+│   │   ├── lab-files/
+│   │   │   ├── Cymbal Q4 Sales Data by City.xlsx  [19K]
+│   │   │   └── Cymbal Sales Analysis Report.docx  [10K]
+│   │   └── screenshots/
+│   │       └── 09-lab1-drive-datastore-created.png  [139K]
+│   ├── lab2-govern-agent-access-genai160/
+│   │   └── screenshots/
+│   │       ├── 18-lab2-bigquery-agent-installer-copied.png  [295K]
+│   │       └── lab2-cloudshell-roles.webp  [17K]
+│   └── lab3-add-agents-to-gemini-enterprise-genai149/
+│       └── screenshots/
+│           ├── lab3-01-yaml-deploy.webp  [36K]
+│           ├── lab3-02-ge-app-created.png  [100K]
+│           ├── lab3-03-features.png  [117K]
+│           ├── lab3-04-brand-voice-agent-added.png  [108K]
+│           ├── lab3-05-agent-designer-chat.webp  [56K]
+│           └── lab3-06-brand-voice-chat.webp  [33K]
+├── gemini-workshop-track2-platform-builder/
+│   ├── NOTES.md  [3K]
+│   ├── novasmart-guide-capture/
+│   │   ├── mission-steps.txt  [182K]
+│   │   └── novasmart-control-center.html  [1537K]
+│   └── screenshots/
+│       ├── 01-remote-env-readiness.png  [188K]
+│       └── 03-remote-session-queued-prompts.png  [299K]
+├── ibm-yourlearning-genai-agentic-consultant-experienced/
+│   └── NOTES.md  [9K]
+├── scripts/
+│   ├── install-hooks.sh  [1K]
+│   └── pii_scan.py  [37K]
+├── site/
+│   └── layouts/
+│       ├── home.llms.txt  [1K]
+│       ├── home.llmsfull.txt  [1K]
+│       ├── home.markdown.md  [1K]
+│       ├── page.markdown.md  [1K]
+│       ├── section.markdown.md  [1K]
+│       ├── _markup/
+│       │   └── render-heading.html  [1K]
+│       └── _partials/
+│           └── note-meta.txt  [1K]
+└── _vendor/  (Hextra theme v0.13.0, vendored Hugo module: 209 files, 657K; not expanded)

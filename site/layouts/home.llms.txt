@@ -1,0 +1,23 @@
+{{- define "llms-entry" -}}
+{{- $md := "" -}}{{- with .OutputFormats.Get "markdown" -}}{{- $md = .Permalink -}}{{- end -}}
+- [{{ .Title }}]({{ $md }}): {{ .Description }} ({{ with .Params.status }}{{ . }}, {{ end }}{{ if not .Date.IsZero }}{{ .Date.Format "2006-01-02" }}; {{ end }}source `{{ partial "note-meta.txt" . }}`; HTML: {{ .Permalink }})
+{{ end -}}
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+Each note below links to its raw Markdown version (front matter: title, description, track, tags, date, status, source path, HTML URL). Lab code, configs, evalsets and redacted screenshots sit next to each note under the same folder path. Everything in one file: [llms-full.txt]({{ "llms-full.txt" | absURL }}).
+
+## Catalogue
+
+{{ template "llms-entry" site.Home }}
+{{- range site.Sections.ByWeight }}
+## {{ .Title }}
+
+{{ template "llms-entry" . }}
+{{- range .RegularPagesRecursive.ByWeight }}{{ template "llms-entry" . }}{{ end }}
+{{- end }}
+## Optional
+
+- [llms-full.txt]({{ "llms-full.txt" | absURL }}): every note concatenated, with metadata headers and absolute links
+- [TREE.txt]({{ "TREE.txt" | absURL }}): full file tree of the repository with sizes

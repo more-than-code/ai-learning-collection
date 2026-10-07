@@ -1,0 +1,9 @@
+{{- /* Hextra's heading hook, except Level 1 renders nothing: the page title already renders as the H1, so the note's own "# Title" line would duplicate it. Raw Markdown / llms outputs keep it. */ -}}
+{{- if gt .Level 1 -}}
+<h{{ .Level }} data-hextra-search-id="{{ .Anchor | safeURL }}" {{- with .Attributes.class }} class="{{ . }}" {{- end }}>
+  {{- .Text | safeHTML -}}
+  <span class="hx:absolute hx:-mt-20" id="{{ .Anchor | safeURL }}"></span>
+  <a href="#{{ .Anchor | safeURL }}" class="subheading-anchor" aria-label="{{ (T "permalinkLabel") | default "Permalink for this section" }}"></a>
+</h{{ .Level }}>
+{{- end -}}
+{{- /* Drop trailing newlines */ -}}
