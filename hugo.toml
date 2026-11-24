@@ -123,3 +123,27 @@ enableRobotsTXT = true
   [[module.mounts]]
     source = "ibm-yourlearning-genai-agentic-consultant-experienced/NOTES.md"
     target = "content/ibm-yourlearning-genai-agentic-consultant-experienced/_index.md"
+
+  [[module.mounts]]
+    source = "TOPICS.md"
+    target = "content/topics.md"
+
+  [[module.mounts]]
+    source = "ibm-fdp-data-ai/NOTES.md"
+    target = "content/ibm-fdp-data-ai/_index.md"
+
+  [[module.mounts]]
+    source = "llm-agent-eval-tools/NOTES.md"
+    target = "content/llm-agent-eval-tools/_index.md"
+
+  [[module.mounts]]
+    source = "github-app-vs-oauth-app/NOTES.md"
+    target = "content/github-app-vs-oauth-app/_index.md"
+
+  [[module.mounts]]
+    source = "quizzes/README.md"
+    target = "content/quizzes/_index.md"
+  [[module.mounts]]
+    source = "quizzes"
+    target = "content/quizzes"
+    files = ["! README.md"]
