@@ -16,11 +16,15 @@ Joe's AI learning material only: notes on concepts, how-tos and gotchas, plus th
 
 ## Catalogue
 
+Topics grouped by category, with their status: [TOPICS.md](TOPICS.md).
+
 | Folder | Files | Size | What it is |
 |---|---:|---:|---|
 | [gemini-agent-development-cps-path-4741](gemini-agent-development-cps-path-4741/) | 12 | 194 KB | Agent Development CPS path: Antigravity, ADK deploy to Agent Runtime, ADK evaluation. Includes the lab 3 starter agent + evalsets and the improved agent/eval config |
 | [gemini-enterprise-deployment-cps-path-4739](gemini-enterprise-deployment-cps-path-4739/) | 12 | 935 KB | Gemini Enterprise deployment path: Workspace data stores + Model Armor, Agent Identity access, adding ADK/Agent Designer agents. Includes lab 1 input files and 9 config/agent screenshots |
 | [gemini-workshop-track2-platform-builder](gemini-workshop-track2-platform-builder/) | 5 | 2.2 MB | Build with Gemini workshop Track 2 (NovaSmart AI governance missions). Includes the saved course guide, mission step definitions and 2 agent-session screenshots |
+| [github-app-vs-oauth-app](github-app-vs-oauth-app/) | 1 | 5 KB | GitHub App vs OAuth App: Defect Drainer's Connect GitHub flow (state, installer verification, per-job installation tokens) and why Deploybot uses an OAuth App for ghcr |
+| [llm-agent-eval-tools](llm-agent-eval-tools/) | 1 | 6 KB | LLM and agent evaluation tools: promptfoo (evals, red teaming, OpenAI acquisition) and the 2026 landscape of eval frameworks and platforms |
 | [ibm-yourlearning-genai-agentic-consultant-experienced](ibm-yourlearning-genai-agentic-consultant-experienced/) | 1 | 9 KB | IBM generative/agentic AI plan study notes: RAG (architecture, advanced/agentic/graph, evaluation), the executive genAI adoption view, custom reliability metrics, the AI Fluency 4D framework |
 
 ## Items by track
